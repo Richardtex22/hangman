@@ -113,8 +113,7 @@ function makeImage(word, clue) {
       <rect width="900" height="506" fill="url(#bg)"/>
       <circle cx="170" cy="118" r="82" fill="#ffffff" opacity="0.55"/>
       <circle cx="744" cy="388" r="112" fill="#ffffff" opacity="0.45"/>
-      <text x="450" y="238" text-anchor="middle" font-size="156">${icon}</text>
-      <text x="450" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#345268">${clue}</text>
+      <text x="450" y="320" text-anchor="middle" font-size="250">${icon}</text>
     </svg>
   `;
 

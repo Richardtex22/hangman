@@ -165,14 +165,10 @@ function App() {
             <span className="word-count">
               {wordIndex + 1}/{words.length}
             </span>
-          </div>
-
+          </div>    
           <div className="prompt-row">
             <p>{current.clue}</p>
-            <span className={`status-mark ${correct ? 'good' : incorrect ? 'bad' : ''}`}>
-              {correct ? '✓' : incorrect ? '×' : ''}
-            </span>
-          </div>
+          </div>      
 
           <div
             className="answer-row"
@@ -205,6 +201,8 @@ function App() {
             )}
           </div>
 
+           
+
           <div className="actions">
             <button type="button" className="icon-button" onClick={resetWord} aria-label="Try again">
               ↻
@@ -215,6 +213,9 @@ function App() {
             <button type="button" className="next-button" onClick={() => move(1)} disabled={!correct}>
               Next ›
             </button>
+             <span className={`status-mark ${correct ? 'good' : incorrect ? 'bad' : ''}`}>
+              {correct ? '✓' : incorrect ? '×' : ''}
+            </span>
           </div>
         </article>
 
